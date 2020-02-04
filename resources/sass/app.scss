@@ -1,0 +1,110 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,900|Playfair+Display+SC:700&display=swap');
+
+// Framework Css
+@import '~materialize-css/dist/css/materialize.min';
+
+//////////
+//
+// General´s
+//
+//////////
+html{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+.bold{
+	font-weight: 900;
+}
+.small{
+	font-size: .8rem;
+}
+.title{
+	text-transform: uppercase;
+}
+nav li a:hover{
+	background: transparent !important;
+}
+.valign-wrapper{
+	height: auto;
+}
+.justify{
+	text-align: justify;
+}
+h1{
+	font-size: 3rem;
+}
+.btn-block{
+	width: 100%;
+}
+.overflow{
+	overflow-y: hidden;
+}
+blockquote{
+	border-left: 5px solid #E85225 !important;
+}
+//////////
+//
+// Color´s
+//
+//////////
+.orange{
+	background: #E85225 !important;
+}
+.orange-text{
+	color: #E85225 !important;
+}
+.blue{
+	background: #0C1C47 !important;
+}
+.blue-text{
+	color: #0C1C47 !important;
+}
+.grey{
+	background: #6D6D6D !important;
+}
+.grey-text{
+	color: #6D6D6D !important;
+}
+.i-f{
+	color: #3b5998;
+}
+.i-w{
+	color: #25d366;
+}
+//////////
+//
+// Background´s
+//
+//////////
+.hero{
+	background: url('/img/hero.jpg') no-repeat bottom center;
+	background-attachment: cover;
+	background-size: cover;
+	height: auto;
+	width: 100vw;
+}
+.fondo{
+	background: url('/img/fondo.jpg') top center no-repeat;
+	background-attachment: cover;
+	background-size: cover;
+	height: auto;
+	width: 100vw;
+}
+//////////
+//
+// Querie´s
+//
+//////////
+@media screen and (min-width: 600px) {
+	.valign-wrapper{
+		height: 99vh;
+	}
+	.hero{
+		background: url('/img/hero.jpg') no-repeat bottom center;
+		background-attachment: cover;
+		background-size: cover;
+		height: 100vh;
+		width: 100vw;
+	}	
+}
