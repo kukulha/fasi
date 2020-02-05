@@ -3,7 +3,7 @@
 @section('title', 'Fuerza Abarrotera Nacional')
 
 @section('content')
-<header>
+<header id="home">
 	<div class="hero">
 		<div class="row">
 			<div class="col m8 s12">
@@ -43,7 +43,7 @@
 		</div>
 	</section>
 
-	<section class="container">
+	<section class="container" id="register">
 		<div class="center">
 			<p class="blue-text bold">Cerca de</p>
 			<h3 class="blue-text bold"><span class="orange-text">5000</span> puntos de venta en <span class="orange-text">7 estados</span></h3>
@@ -77,7 +77,7 @@
 		</div>
 	</section>
 
-	<section class="container">
+	<section class="container" id="benefits">
 		<div class="center section">
 			<h5 class="grey-text">Forma parte de la Comunidad de Fuerza Abarrotera Nacional y obtén grandes beneficios.</h5>
 			<div class="row">
@@ -105,7 +105,7 @@
 		</div>
 	</section>
 
-	<section class="section container center">
+	<section class="section container center" id="blog">
 		<h3 class="orange-text">Noticias</h3>
 		<div class="row">
 			@foreach($posts as $post)
@@ -121,7 +121,7 @@
 			</div>
 			@endforeach
 		</div>
-		<a href="" class="btn orange">Ver más</a>
+		<a href="{{ route('blog') }}" class="btn orange">Ver más</a>
 	</section>
 
 	<section class="section container center">
@@ -161,8 +161,8 @@
 				</div>
 				<div class="row">
 					<div class="col m4 s12">
-						<a href="" class="i-f"><i class="fab fa-facebook-square fa-3x"></i></a>
-                        <a href="" class="i-w"><i class="fab fa-whatsapp-square fa-3x"></i></a>
+						<a href="http://bit.ly/2Ssiafg" class="i-f"><i class="fab fa-facebook-square fa-3x"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5213481216767&text=Quiero%20m%E1s%20informaci%F3n" class="i-w"><i class="fab fa-whatsapp-square fa-3x"></i></a>
 					</div>
 					<div class="col m8 s12">
 						<p class="orange-text bold right-align">Francisco Javier Orozco Morales</p>
@@ -186,7 +186,7 @@
 				</div>
 			</div>
 			<div class="col m4 s12">
-				<p class="white-text right-align">Si no eres de San Ignacio Cerro Gordo pero cuentas con una tienda de Abarrotes y quieres pertenecer a nuestra Familia FAN, mándanos un mensaje al: (322) 105 6893</p>
+				<p class="white-text right-align">Si no eres de San Ignacio Cerro Gordo pero cuentas con una tienda de Abarrotes y quieres pertenecer a nuestra Familia FAN, mándanos un mensaje al: (348) 121 6767</p>
 			</div>
 		</div>
 		<div class="center">

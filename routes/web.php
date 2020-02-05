@@ -13,7 +13,9 @@
 Auth::routes();
 
 Route::get('/', 'Web\PagesController@index')->name('home');
-Route::get('post/{slug}', 'Web\PagesController@post')->name('post');
+Route::get('blog/{slug}', 'Web\PagesController@post')->name('post');
+Route::get('blog', 'Web\PagesController@blog')->name('blog');
+Route::get('category/{slug}', 'Web\PagesController@category')->name('category');
 
 //Admin
 Route::resource('messages', 'Admin\MessagesController');

@@ -10,6 +10,10 @@ use App\Mail\NewContact;
 
 class MessagesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->only(['index', 'destroy']);
+    }
     /**
      * Display a listing of the resource.
      *
