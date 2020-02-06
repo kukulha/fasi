@@ -13,6 +13,7 @@ $(document).ready(function(){
     	dist: 0,
     	padding: 25
     });
+    $('.sidenav').sidenav();
     setInterval(function() {
     	$('.carousel').carousel('next');
   	}, 3500);
